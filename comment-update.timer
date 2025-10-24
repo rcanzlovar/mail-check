@@ -1,0 +1,12 @@
+#     sudo vim /etc/systemd/system/comment-update.timer
+
+
+[Unit]
+    Description="Run my-task.service every 5 minutes"
+
+[Timer]
+    OnCalendar=*:0,10,20,30,40,50
+    Persistent=true
+
+[Install]
+    WantedBy=timers.target

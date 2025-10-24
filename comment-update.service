@@ -1,0 +1,21 @@
+#     sudo nano /etc/systemd/system/my-task.service
+
+
+[Unit]
+Description="Update Comments on rcanzlovar.com"
+
+[Service]
+
+
+# --- Add these lines ---
+User=rca
+Group=rca
+
+
+
+Type=oneshot
+# Set the working directory to where the script is located
+WorkingDirectory=/home/rca/Projects/blog-builder/scripts/mail-check/
+# Use sh -c to handle the shell redirection
+#ExecStart=/bin/sh -c '/home/rca/Projects/blog-builder/scripts/mail-check/run-check.sh >> /var/log/comments/mail-check-task.log 2>&1'
+ExecStart=/bin/sh -c './run-check.sh >> /var/log/comments/mail-check-task.log 2>&1'
