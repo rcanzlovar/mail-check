@@ -53,3 +53,6 @@ Currently this will accept comments from anyone. I plan to implement a "whitelis
 to post. First time someone posts, It will probably end up being a SQLite database or something similar running on the 
 same system as the checkmail script. Once someone is added, they can post whatever they want. I currently have no 
 plans for post-by-post moderation. I just don't have that many readers yet. 
+
+
+Files are available for download at my [github repository](https://github.com/rcanzlovar/mail-check)
